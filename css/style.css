@@ -4,73 +4,80 @@ body{
   margin: 0;
   padding: 0;
   font-size: 16pt; 
+  font-family: "Raleway", sans-serif;
+  background-image: url("../images/concrete_seamless.png");
 }
 
 /*Requirement 2*/
 header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
-  /*Your  code here again.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
 /*Requirement 3*/
 .nav_links{
-  /*Your code here again.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
 /*Requirement 4*/
 .price{
-    min-height: 500px;
-    /*Your code here*/
-    /*You must use flex.
-    /*Don't forget to vertically and horizontally 
-    align the element*/
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Requirement 5*/
-.package {
+.package{
   margin: 12px;
   background: #fff;
   border-radius: 7px;
   padding: 0 0 50px 0;
-  /*Your code here.*/
-  /*Take a look at flex-basis*/
+  display: flex;
+  flex-direction: column;
+  flex-basis: 400px;
+  
 
 }
 
 /*Requirement 6*/
-/**  UNCOMMENT THIS CODE ONCE YOU
-/**  HAVE THE SELECTOR
-{
+
+.package header{
   background: #288080;
   border: 2px solid #45ADAD;
   padding: 20px 0;
   border-radius: 7px 7px 0 0;
-}*/
+}
 
 
 /*Requirement 7*/
 .gallery{
   min-height: 600px;
-  /*Your code here again.*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 
 }
 
 /*Requirement 8*/
-/**  UNCOMMENT THIS CODE ONCE YOU
-/**  HAVE THE SELECTOR
-{
+
+.gallery img{
   border: 10px #50C7C7 solid;
   margin: 10px;
   width: 300px;
 }
-*/
+
 
 /*Requirement 9*/
 #logo{
-   /*Your code here.*/
+  
  
 }
 
@@ -89,30 +96,62 @@ header{
 
   /*Requirement 10*/
   header{
-    /*Your code here again.*/  
+    flex-direction: row;
+    justify-content: left;
+    
+
   }
 
   /*Requirement 10*/
   .nav_links{
-    /*Your code here again.*/  
+    flex-direction: row;
+    justify-content: left;
+
+    
   }
 
   /*Requirement 11*/
   .package {
-    /*Your code here again.*/
+    flex-basis: 230px;
   } 
 }
 
 /*Requirement 12*/
 /*Add media query to handle reduced-motion*/
 /*Your code here again.*/ 
+@media (prefers-reduced-motion: reduce) {
+
+  
+}
 
 
 
 @media print { 
 
-  /*Requirement 13*/
-  /*Requirement 14*/
+  body{
+    background-image: none;
+  }
+
+  .nav_links{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .price{
+    align-items: baseline;
+  }
+
+  .package{
+    border: 2px solid #45adad;
+    flex-basis: 200px;
+  }
+
+  .gallery{
+    display: none;
+    
+  }
+
+
   /*Requirement 15*/
   /*Requirement 16*/
   /*Requirement 17*/
