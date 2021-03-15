@@ -120,7 +120,7 @@ header{
 
   /*Requirement 11*/
   .package{
-    flex: 230px;
+    flex-basis: 230px;
   } 
 }
 
