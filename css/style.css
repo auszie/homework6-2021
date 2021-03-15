@@ -76,7 +76,7 @@ header{
 
 /*Requirement 9*/
 #logo{
-  animation: logo_grow;
+  animation-name: logo_grow;
   animation-duration: 15s;
  
 }
